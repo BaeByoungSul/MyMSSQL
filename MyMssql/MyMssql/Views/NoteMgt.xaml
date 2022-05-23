@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyMssql.Views.NoteMgt"
+             Title="Note"
+             Padding="15">
+    
+    <Grid BackgroundColor="Beige"   >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Editor Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                    Placeholder="Enter your subject"
+                    PlaceholderColor="DarkGray"
+                    Text="{Binding Title}"
+                    BackgroundColor="AliceBlue"
+                    TextColor="Black"
+                    />
+
+        <Editor Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
+                    Placeholder="Enter your notes"
+                    PlaceholderColor="DarkGray"
+                    TextColor="Black"
+                    x:Name="txtNotes"
+                    Text="{Binding NoteText}"
+                    
+                    HorizontalOptions="FillAndExpand"/>
+        <Button Grid.Row="2" Grid.Column="0" 
+                    x:Name="btnSave" Text="Save" />
+        <Button Grid.Row="2" Grid.Column="1"
+                    x:Name="btnDelete"  Text="Delete"    />
+
+    </Grid>
+
+
+</ContentPage>
