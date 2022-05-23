@@ -43,8 +43,8 @@
             <DataTemplate>
                 <StackLayout Orientation="Horizontal"
                              Padding="10,5,5,10"
-                             BackgroundColor="Beige">
-                    <Label Text="{Binding HeaderValue}"/>
+                             BackgroundColor="Beige" >
+                    <Label TextColor="Black" Text="{Binding HeaderValue}"/>
                 </StackLayout>
             </DataTemplate>
         </ListView.HeaderTemplate>
@@ -53,7 +53,7 @@
                 <StackLayout Orientation="Horizontal"
                              Padding="10,5,5,10"
                              BackgroundColor="Aquamarine">
-                    <Label Text="{Binding FooterValue}"/>
+                    <Label TextColor="Black" Text="{Binding FooterValue}"/>
                 </StackLayout>
             </DataTemplate>
         </ListView.FooterTemplate>
